@@ -2,19 +2,20 @@
   "name": "cse-341-project1",
   "version": "1.0.0",
   "description": "My First Project",
-  "homepage": "https://github.com/danielcordeirofaria/cse-341-project1#readme",
+  "homepage": "https://github.com/BIGvic-Coder/cse341project1#readme",
   "bugs": {
-    "url": "https://github.com/danielcordeirofaria/cse-341-project1/issues"
+    "url": "https://github.com/BIGvic-Coder/cse341project1/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielcordeirofaria/cse-341-project1.git"
+    "url": "git+https://github.com/BIGvic-Coder/cse341project1.git"
   },
   "license": "ISC",
-  "author": "Daniel Faria",
+  "author": "Victor",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
