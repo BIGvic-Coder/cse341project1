@@ -1,5 +1,4 @@
 // data/database.js
-
 const dotenv = require("dotenv");
 dotenv.config();
 const { MongoClient } = require("mongodb");
@@ -12,14 +11,13 @@ const initDb = (callback) => {
     return callback(null, database);
   }
 
-  MongoClient.connect(process.env.MONGO_URI) // ✅ matches your .env and Render variable
+  MongoClient.connect(process.env.MONGO_URI)
     .then((client) => {
-      database = client.db("portfolioDB"); // ✅ use your database name here
+      database = client.db("portfolioDB"); // ✅ point to your DB
       console.log("Database connected!");
       callback(null, database);
     })
     .catch((err) => {
-      console.error("Database connection failed:", err);
       callback(err);
     });
 };
